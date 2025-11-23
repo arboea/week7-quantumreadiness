@@ -1,0 +1,29 @@
+=== RSA TOY OUTPUT ===
+
+RSA Toy Demo (simulation only)
+Generated small RSA key: n=3799124051 (bits ~32)
+Original message: b'Quantum?'
+
+STDERR:
+Traceback (most recent call last):
+  File "c:\Users\andya\OneDrive\Documents\GitHub\week7-quantumreadiness\quantum_examples\rsa_toy.py", line 149, in <module>
+    demo()
+    ~~~~^^
+  File "c:\Users\andya\OneDrive\Documents\GitHub\week7-quantumreadiness\quantum_examples\rsa_toy.py", line 131, in demo
+    cipher = rsa_encrypt(message, keypair.n, keypair.e)
+  File "c:\Users\andya\OneDrive\Documents\GitHub\week7-quantumreadiness\quantum_examples\rsa_toy.py", line 92, in rsa_encrypt
+    raise ValueError('message too large for modulus')
+ValueError: message too large for modulus
+
+
+=== PQC EXAMPLE OUTPUT ===
+
+PQC KEM Demo (simulation-focused)
+Message: b'Quantum?'
+pqcrypto not available — using secure fallback simulation KEM
+Recovered (legit): b'Quantum?'
+
+Starting small brute-force sampling (will not exhaust full space)...
+Sampling attempts: 10000, elapsed 0.009s, found=False
+Estimated time to brute-force 256-bit key at 10,000,000 ops/s: 3.67e+62 years
+
