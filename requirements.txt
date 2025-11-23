@@ -1,0 +1,4 @@
+# Optional libraries for experiments
+pqcrypto
+pycryptodome
+# pqcrypto may require system libs; if unavailable the scripts fall back to simulation.
